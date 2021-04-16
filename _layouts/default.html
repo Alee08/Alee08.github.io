@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en"}}">
+
+<head>
+  {% include head.html %}
+</head>
+
+  <body class="page">
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+{{ content | regex_replace: '\<a class\="details" href\="\/papers\/.*\.html"\>DetailsToRemove\<\/a\>', '' }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts/jquery.html %}
+  {% include scripts/bootstrap.html %}
+  {% include scripts/jquery-ui.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/disqus-post-body.html %}
+  {% include scripts/misc.html %}
+
+</html>

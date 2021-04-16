@@ -1,0 +1,28 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+  {% for item in site.data.contacts %}
+    {% if item.name == 'OrcID' %}
+        {% continue %}
+    {% endif %}
+      <span class="footer-icon">
+         <a href="{{ item.href }}"><img width="24" height="24" src="{{ item.icon }}"></a>
+      </span>
+  {% endfor %} 
+
+<!-- <div style="display: inline; text-align: center"
+  itemscope itemtype="https://schema.org/Person">
+  <a itemprop="sameAs" content="https://orcid.org/"
+     href="https://orcid.org/"
+     target="orcid.widget"
+     rel="me noopener noreferrer"
+     style="vertical-align:top;">
+      <img src="/assets/img/icons/orcid_bw.png"
+           width="24" height="24"
+           alt="ORCID iD icon"></a></div>
+           https://orcid.org/
+-->
+</div>
+
+
+</footer>

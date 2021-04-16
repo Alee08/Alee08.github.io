@@ -1,0 +1,17 @@
+{% if site.enable_google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/assets/js/publications.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics }}');
+  {% for ga_measurement in site.google_analytics_measurements %}
+  gtag('config', '{{ ga_measurement }}');
+  {% endfor %}
+  gtag('set', 'anonymizeIp', true);
+  gtag('send', 'pageview');
+</script>
+{% endif %}
