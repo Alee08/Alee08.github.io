@@ -9,9 +9,9 @@ authors:
     url: https://alee08.github.io
   - name: Supervised by Prof. Luca Iocchi
     url: https://sites.google.com/a/dis.uniroma1.it/iocchi/home
-permalink: /Multi-UAV
+permalink: /Multi-UAV_RL_RB
 includelink: true
-identifier: Multi-UAV
+identifier: /Multi-UAV_RL_RB
 order: 4
 bibliography: _pages/Multi_UAV/Multi-UAV.bib
 
