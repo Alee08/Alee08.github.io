@@ -1,8 +1,8 @@
-# marcofavorito.me
+# Alee08.github.io
 
 My personal webpage.
 
-Link: https://alee08.github.io/
+Link: https://Alee08.github.io/
 
 
 ## Preliminaries

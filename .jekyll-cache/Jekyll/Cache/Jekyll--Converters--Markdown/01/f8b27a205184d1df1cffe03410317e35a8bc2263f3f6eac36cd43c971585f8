@@ -1,4 +1,4 @@
-I"Z)<p>Unmanned aerial vehicles (UAVs) are becoming more and more in demand, their use initially spread for the execution of military missions, now it is becoming increasingly popular in the civilian field. UAVs are involved in the most exterminated missions. In this thesis, we address the problem of the risk of conflicts between UAVs and then analyze it in a specific scenario. 
+I"Y)<p>Unmanned aerial vehicles (UAVs) are becoming more and more in demand, their use initially spread for the execution of military missions, now it is becoming increasingly popular in the civilian field. UAVs are involved in the most exterminated missions. In this thesis, we address the problem of the risk of conflicts between UAVs and then analyze it in a specific scenario. 
 Minimizing the risk of collision is extensively covered in the <a href="http://bubbles-project.eu/"><em>BUBBLES project</em></a>.
 The <a href="http://bubbles-project.eu/"><em>BUBBLES project</em></a> is a large project funded by the <em>European community</em>, coordinated by the <em>Universitat Politècnica de València</em> with the participation of the <a href="https://www.dis.uniroma1.it/en"><em>DIAG</em></a>, <a href="https://www.uniroma1.it/en/pagina-strutturale/home"><em>Sapienza University of Rome</em></a> coordinated by <a href="https://sites.google.com/a/dis.uniroma1.it/iocchi/home">Prof. Luca Iocchi</a>. 
 The focus of the <em>Sapienza unit</em> is to implement methods to generate many trajectories for risk assessment.</p>
@@ -164,5 +164,4 @@ It is possible to perform experiments by increasing the size of the map, the num
 <p>Our system is scalable, and we can generate hundreds of trajectories at a lower cost than a standard Multi-agent algorithm, in which case the cost would be exponential.
 Our method finds an optimal policy for each agent, reducing interference between agents policies.
 From the execution of the policies, we generate trajectories with a lower frequency of conflict.</p>
-
 :ET
