@@ -77,7 +77,7 @@ Each $\mathcal{RB}$ is a tuple that contains:
 ### Reinforcement Learning + Restraining Bolt augmented
 In the _RL_ the agent performs an action and receives a reward and an observation from the environment. With the _Bolt_, the agent receives two independent rewards, one from the _MDP_ for each _state/action_ and another from the $\mathcal{RB}$ based on the state of the automata, which follows the satisfaction state of the $\phi_i$, formula.
 
-| ![](_pages\Multi_UAV\RL_RB(copia)3.gif){:height="100%" width="100%"}| 
+| ![](_pages\Multi_UAV\RL-RB+.gif){:height="100%" width="100%"}| 
 |:--:| 
 | Reinforcement Learning + Restraining Bolt augmented |
 

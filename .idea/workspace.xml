@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1a3cba-ee39-4e45-823a-c95c2066453b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LI-Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_pages/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_pages/Multi_UAV/RL-RB+.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_pages/Multi_UAV/RL_RB+.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/0c/888c67e68f711181af32f26c888bfc105c349529a9eae3012ab27cba93ffd0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/15/2e38c831768921e0e04e5aebd78e33ac213eaade801efa98ae61488e64baad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/65/67376c63e333f65c0393e99047b8e1c97854fa6324de0ddc381d3e63351ea5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/76/7704a340e48451f188a3f90a7f5449aaee4c201979c540f0da146485a19006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/bb/17fd90c4f5053f32304a1f687dbbf52afe86fea8e7ce81ed630d2480684963" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/c0/57c4c4e5f2200c5ef730b781216be6cf77b6da10c5c98c246c9a9bb8ec9723" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/c9/210748abca82ebfc247412c4b92dc0c66184375da6617700c77fc8acc25611" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/_site/CNAME" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/Multi-UAV_RL_RB.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/Multi-UAV_RL_RB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_pages/Multi_UAV/RL_RB(copia)3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/Multi_UAV/RL_RB(copia)3.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Multi-UAV.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Multi-UAV.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bibliography/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bibliography/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_pages/Multi_UAV/RL_RB(copia)3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_pages/Multi_UAV/RL_RB(copia)3.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/papers.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/papers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +29,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_pages/Multi_UAV" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_pages/Multi_UAV" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/_pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_pages/Multi_UAV" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -64,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618616356549</updated>
       <workItem from="1618616357652" duration="1624000" />
+      <workItem from="1618670430937" duration="1686000" />
     </task>
     <servers />
   </component>
@@ -71,6 +62,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
