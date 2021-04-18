@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1a3cba-ee39-4e45-823a-c95c2066453b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_pages/Multi_UAV/Tesi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_pages/Multi_UAV/pdf.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/Multi-UAV_RL_RB.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/Multi-UAV_RL_RB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/13/089ce5d7a7f0924f6aaa399a744ff1e93ecca70c01951d7694bd23a289334e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/23/4177100dc2d4544a8179438ae9eab019abe2199d8da234a6c373181a984fe2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/38/d15e9c8c53fc1c10d8439754c1b7d54af7427690c48c073468f68a657896ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/49/ca966d76fef021840f1a6597ac9154f3f36ed80b36c8dfcecc02fd744f8ac8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/6a/d680df95dc1b6e01dc342baddcb36abcdf7205a48e616ac05590d579babc90" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/a3/92d0e7b3a1b1377a4209cf9c3b63594cf73f457e47329018def82b362cd6f6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/af/3f37b26444f8b4f857550ac1e92fa6b77a2fd03e627a4540f9519bd1a5a56f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/e1/40465a5f6d2ea8744975fe1418004144044f765b6123ad55f8eb3a0410b8ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ee/8609af5a6ab360fff1cf6bf591be510e58259b0a0ce8511084454f2ef44294" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Multi-UAV_RL_RB.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Multi-UAV_RL_RB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/papers.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/papers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +70,8 @@
       <updated>1618616356549</updated>
       <workItem from="1618616357652" duration="1624000" />
       <workItem from="1618670430937" duration="2369000" />
-      <workItem from="1618700622100" duration="301000" />
+      <workItem from="1618700622100" duration="597000" />
+      <workItem from="1618743156783" duration="6547000" />
     </task>
     <servers />
   </component>
