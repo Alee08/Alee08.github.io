@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1a3cba-ee39-4e45-823a-c95c2066453b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GitHub_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Multi-UAV_RL_RB.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Multi-UAV_RL_RB.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/_data/navigation.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/a-saucerful-of-secrets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/how-to-use-my-pgp-key-cheatsheet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/papers.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/papers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +36,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_pages/Multi_UAV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_pages/Multi_UAV" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/_pages/Multi_UAV" />
       <recent name="$PROJECT_DIR$/_pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -50,7 +64,10 @@
       <workItem from="1618670430937" duration="2369000" />
       <workItem from="1618700622100" duration="597000" />
       <workItem from="1618743156783" duration="6880000" />
-      <workItem from="1618770145482" duration="791000" />
+      <workItem from="1618770145482" duration="2488000" />
+      <workItem from="1618826944473" duration="171000" />
+      <workItem from="1619024551099" duration="25000" />
+      <workItem from="1626971840689" duration="2223000" />
     </task>
     <servers />
   </component>
