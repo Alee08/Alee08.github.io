@@ -8,7 +8,7 @@ includelink: true
 order: 1
 ---
 
-My name is Alessandro Trapasso. !!!!dfdsfsf
+My name is Alessandro Trapasso. 
 I have an MSc and BSc degree in Engineering in Computer Science obtained at [Sapienza University of Rome](https://www.uniroma1.it/en/pagina-strutturale/home) ([DIAG](https://www.dis.uniroma1.it/en)).
 I have a great passion for Machine Learning, football and chess.
 I am convinced that passion, the desire to improve, to become an even better version of oneself,
