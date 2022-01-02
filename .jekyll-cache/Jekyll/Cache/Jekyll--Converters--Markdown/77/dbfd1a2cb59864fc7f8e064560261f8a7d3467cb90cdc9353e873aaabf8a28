@@ -1,0 +1,44 @@
+I"Ã<p>Quick cheatsheet on how to 
+encrypt or verify a message to/from me.</p>
+
+<ul>
+  <li>Import the public key
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl hhttps://alee08.github.io/assets/public_pgp.txt | gpg --import
+# or
+# curl https://keybase.io/alessandrotrapasso/pgp_keys.asc | gpg --import
+</code></pre></div>    </div>
+  </li>
+  <li>Encrypt a message:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "A saucerful of secrets" &gt; message.txt
+gpg --output message.txt.gpg --encrypt --recipient ale.trapasso8@gmail.com message.txt
+</code></pre></div>    </div>
+  </li>
+  <li>Sign message:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shasum -a 256 | awk '{print $1}' &gt; message.txt.sha256sum
+gpg --output message.txt.sha256sum.sig --sign message.txt.sha256sum
+</code></pre></div>    </div>
+  </li>
+  <li>Decrypt message
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --output message.txt --decrypt message.txt.gpg
+</code></pre></div>    </div>
+  </li>
+  <li>Verify signature
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --verify message.txt.sha256sum.sig
+# or 
+# gpg --output message.txt.sha256sum  --decrypt message.txt.sha256sum.sig
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Other useful commands.</p>
+<ul>
+  <li>To know your keys:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --list-secret-keys --keyid-format LONG
+</code></pre></div>    </div>
+  </li>
+  <li>To export the public key:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg --armor --export &lt;key-id&gt; # e.g. D7E224F...
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET
