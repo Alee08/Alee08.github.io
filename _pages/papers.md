@@ -26,9 +26,10 @@ version may no longer be accessible.
 <span><img alt="conference" src="/assets/img/inproceedings-box.png"/> Conference Proceedings</span>
 <span><img alt="other" src="/assets/img/informal-box.png"/> Other publications</span>
 
-{::nomarkdown}
-{% bibliography --file bibliography.bib -q @*[author ~= Trapasso] %}
-{:/nomarkdown}
-
-
-
+{% comment %} Store the count of publication groups {% endcomment %}
+{% capture book_count %}{% bibliography_count -q @book[author ~= Trapasso] %}{% endcapture %}
+{% capture incollection_count %}{% bibliography_count -q @incollection[author ~= Trapasso] %}{% endcapture %}
+{% capture article_count %}{% bibliography_count -q @article[author ~= Trapasso] %}{% endcapture %}
+{% capture inproceedings_count %}{% bibliography_count -q @inproceedings[author ~= Trapasso] %}{% endcapture %}
+{% capture other_count %}{% bibliography_count -q @techreport[author ~= Trapasso] @unpublished[author ~= Trapasso] %}{% endcapture %}
+{% bibliography -q @*[author ~= Trapasso] %}
