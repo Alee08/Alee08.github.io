@@ -33,3 +33,54 @@ version may no longer be accessible.
 {% capture inproceedings_count %}{% bibliography_count -q @inproceedings[author ~= Trapasso] %}{% endcapture %}
 {% capture other_count %}{% bibliography_count -q @techreport[author ~= Trapasso] @unpublished[author ~= Trapasso] %}{% endcapture %}
 {% bibliography -q @*[author ~= Trapasso] %}
+
+
+**Apply Filters**
+
+<label class="checkboxes"><input type="checkbox" onClick="toggle('book')" checked/><span><img alt="book" src="{{ site.url }}/images/book-box.png"/> Books ({{ book_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('incollection')" checked/><span><img alt="chapter" src="{{ site.url }}/images/incollection-box.png"/> Book Chapters ({{ incollection_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('article')" checked/><span><img alt="article" src="{{ site.url }}/images/article-box.png"/> Journal Articles ({{ article_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('inproceedings')" checked/><span><img alt="conference" src="{{ site.url }}/images/inproceedings-box.png"/> Conference Proceedings ({{ inproceedings_count }})</span></label>
+<label class="checkboxes"><input type="checkbox" onClick="toggle('other')" checked/><span><img alt="other" src="{{ site.url }}/images/informal-box.png"/> Other publications ({{ other_count }})</span></label>
+(total publications: {% bibliography_count -q @*[author ~= Trapasso] %})
+
+<div id="columnchart_material" style="width: 400px; height:200px"></div>
+
+{% bibliography -q @*[author ~= Trapasso] %}
+
+
+
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'Books', 'Chapters', 'Articles', 'Proceedings', 'Other'],
+{%- assign currYear = 'now' | date: "%Y" -%}
+{%- for i in (2009..currYear) -%}
+['{{ i }}', {% bibliography_count -q @book[author ~= Trapasso, year={{i}}] %}, {% bibliography_count -q @incollection[author ~= Trapasso, year={{i}}] %}, {% bibliography_count -q @article[author ~= Trapasso, year={{i}}] %}, {% bibliography_count -q @inproceedings[author ~= Trapasso, year={{i}}] %}, {% bibliography_count -q @techreport[author ~= Trapasso, year={{i}}] %}],
+{%- endfor -%}
+        ]);
+
+
+	var options = {
+             isStacked: true,
+             height: 200,
+             width: 400,
+             legend: {position: 'none'},
+             vAxis: {minValue: 0},
+             series: {
+		    0:{color:'#f8c91f'},
+		    1:{color:'#ef942d'},
+		    2:{color:'#c32b72'},
+		    3:{color:'#196ca3'},
+		    4:{color:'#606b70'}
+		  }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
