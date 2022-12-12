@@ -89,6 +89,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-figure
   - jekyll/scholar
+  - jekyll-scholar
   - jekyll-regex-replace
   - jemoji
 relative_links:
