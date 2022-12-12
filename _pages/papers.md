@@ -26,9 +26,7 @@ version may no longer be accessible.
 <span><img alt="conference" src="/assets/img/inproceedings-box.png"/> Conference Proceedings</span>
 <span><img alt="other" src="/assets/img/informal-box.png"/> Other publications</span>
 
-{::nomarkdown}
-{% bibliography --file bibliography.bib -q @*[author ~= Trapasso] %}
-{:/nomarkdown}
+{% bibliography -q @*[author ~= Trapasso] %}
 
 
 
