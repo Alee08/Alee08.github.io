@@ -82,7 +82,7 @@ google_analytics_measurements:
 # markdown: kramdown
 theme: minima
 
-plugins:
+plugins_dir:
   - jekyll-relative-links
   - jekyll-postfiles
   - jekyll-redirect-from
