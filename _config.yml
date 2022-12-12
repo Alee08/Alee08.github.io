@@ -92,6 +92,7 @@ plugins:
   - jekyll-scholar
   - jekyll-regex-replace
   - jemoji
+  - jekyll-include-cache
 relative_links:
   enabled: true
   collections: false

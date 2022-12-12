@@ -28,6 +28,7 @@ group :jekyll_plugins do
    gem "jekyll-figure"
    gem "jekyll-regex-replace", "~> 1.1"
    gem "jekyll-postfiles", "~> 3.1"
+   gem "jekyll-include-cache"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
