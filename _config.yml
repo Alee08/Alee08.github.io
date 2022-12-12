@@ -82,17 +82,16 @@ google_analytics_measurements:
 # markdown: kramdown
 theme: minima
 
-plugins_dir:
+plugins:
   - jekyll-relative-links
   - jekyll-postfiles
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-figure
-  - jekyll/scholar
+  #- jekyll/scholar
   - jekyll-scholar
   - jekyll-regex-replace
   - jemoji
-  - jekyll-include-cache
 relative_links:
   enabled: true
   collections: false
