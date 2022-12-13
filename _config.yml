@@ -88,8 +88,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-figure
-  #- jekyll/scholar
-  - jekyll-scholar
+  - jekyll/scholar
   - jekyll-regex-replace
   - jemoji
 relative_links:
