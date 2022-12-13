@@ -1,0 +1,9 @@
+
+- name: About
+  link: /
+#- name: Blog
+#  link: /blog
+- name: Publications
+  link: /papers
+- name: Multi-UAV RL with temporal & priority goals
+  link: /Multi-UAV_RL_RB
