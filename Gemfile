@@ -29,7 +29,7 @@ group :jekyll_plugins do
    gem "jekyll-regex-replace", "~> 1.1"
    gem "jekyll-postfiles", "~> 3.1"
    #gem "faraday_middleware-request-retry"
-   gem 'faraday', '0.17.3'
+   gem 'faraday'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
