@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ba1a3cba-ee39-4e45-823a-c95c2066453b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo/GitHub_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LI-Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo/LI-Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/contacts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/contacts.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/post_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gmail.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo/gmail.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alee8/Alee08.github.io",
+    "last_opened_file_path": "/home/alee8/Alee08.github.io/assets/logo",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -42,11 +38,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/logo" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/papers" />
       <recent name="$PROJECT_DIR$/_pages/Multi_UAV" />
-      <recent name="$PROJECT_DIR$/_pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/logo" />
@@ -83,7 +79,7 @@
       <workItem from="1670956337900" duration="4607000" />
       <workItem from="1671031454366" duration="2665000" />
       <workItem from="1671050186029" duration="2574000" />
-      <workItem from="1671052769564" duration="2626000" />
+      <workItem from="1671052769564" duration="7255000" />
     </task>
     <servers />
   </component>
