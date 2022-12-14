@@ -26,7 +26,7 @@ The focus of the _Sapienza unit_ is to implement methods to generate many trajec
 As it was previously said, the application scenarios in which _UAVs_ can be used are very many, the scenario that is examined in this thesis project concerns the delivery of medical supplies between hospitals in a metropolis.
 In our scenario, hospitals in the city of Rome are represented on the grid. Each hospital can request medicines, organs, vaccines, blood from one of the other $\mathcal{n-1}$ hospitals in the city.
 
-| ![](_pages\Multi_UAV\scenario.png)| 
+| ![](scenario.png)| 
 |:--:| 
 | Scenario |
 
@@ -52,7 +52,7 @@ The scenario of our case study is a tuple defined as follows:
 
 A Scenario $\mathcal{S}  = \langle \mathcal{A, M, RB} \rangle $. 
 
-| ![](_pages\Multi_UAV\problem.gif)| 
+| ![](problem.gif)| 
 |:--:| 
 | Scenario definition   |
 
@@ -77,7 +77,7 @@ Each $\mathcal{RB}$ is a tuple that contains:
 ### Reinforcement Learning + Restraining Bolt augmented
 In the _RL_ the agent performs an action and receives a reward and an observation from the environment. With the _Bolt_, the agent receives two independent rewards, one from the _MDP_ for each _state/action_ and another from the $\mathcal{RB}$ based on the state of the automata, which follows the satisfaction state of the $\phi_i$, formula.
 
-| ![](_pages\Multi_UAV\RL-RB+.gif)| 
+| ![](RL-RB+.gif)| 
 |:--:| 
 | Reinforcement Learning + Restraining Bolt augmented |
 
@@ -119,7 +119,7 @@ The case study is a model of our hospital's problem in which the world is repres
 $\mathcal{RB_i}$ gives a positive reward if the agent does _hovering/beep_ in the right order on the cells of the hospitals.
 In our case, the no-interference reward has been implemented by adding negative weights on the cells crossed by the trajectories of the previous agents.
 
-| ![](_pages\Multi_UAV\LDLf.png)| 
+| ![](LDLf.png)| 
 |:--:| 
 | The missions of each _UAV_ is specified by _LDLf_ formulas  |
 
@@ -127,7 +127,7 @@ In our case, the no-interference reward has been implemented by adding negative 
 The _LTLf/LDLf_ formulas specify the mission of each _UAV_ and the temporal order of the goals.
 The _RL_ algorithm used for the experiments is _SARSA_, _State – action – reward – state – action_, but we should use also other RL algorithms.
 
-| ![](_pages\Multi_UAV\ex3.gif) | ![](_pages\Multi_UAV\ex4.gif) |
+| ![](ex3.gif) | ![](ex4.gif) |
 |:-------------------------:|:-------------------------:|
 | Experiment 3. Without priority | Experiment 4. With priority |
 
