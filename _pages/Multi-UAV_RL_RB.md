@@ -3,7 +3,7 @@ layout: post_page
 title: Multi-UAV reinforcement learning with temporal and priority goals
 description: Master of Science in Engineering in Computer Science 
 date: 2021-04-16 22:00:00 UTC
-image: _pages/Multi_UAV/scenario.png
+image: /assets/Multi_UAV/scenario.png
 authors:
   - name: Alessandro Trapasso
     url: https://alee08.github.io
@@ -13,7 +13,7 @@ permalink: /Multi-UAV_RL_RB
 includelink: true
 identifier: /Multi-UAV_RL_RB
 order: 4
-bibliography: _pages/Multi_UAV/Multi-UAV.bib
+bibliography: /assets/Multi_UAV/Multi-UAV.bib
 
 ---
 
