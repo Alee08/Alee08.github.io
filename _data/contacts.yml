@@ -1,0 +1,66 @@
+
+- name: Personal email
+  data: ale.trapasso8@gmail.com
+  href: mailto:ale.trapasso8@gmail.com
+  icon: /assets/img/icons/envelope.svg
+- name: Academic email
+  data: trapasso@diag.uniroma1.it
+  href: mailto:trapasso@diag.uniroma1.it
+  icon: /assets/img/icons/envelope.svg
+#- name: Telegram
+#  data:
+#  href: https://t.me/
+#  icon: /assets/img/icons/telegram.svg
+- name: GitHub
+  data: alee08
+  href: https://github.com/Alee08
+  icon: /assets/img/icons/github.svg
+- name: LinkedIn
+  data: alessandrotrapasso
+  href: https://www.linkedin.com/in/alessandro-trapasso/
+  icon: /assets/img/icons/linkedin.svg
+- name: Twitter
+  data: AleTrapasso
+  href: https://twitter.com/AleTrapasso
+  icon: /assets/img/icons/twitter.svg
+#- name: keybase
+#  data:
+#  href: https://keybase.io/
+#  icon: /assets/img/icons/keybase.svg
+#- name: Reddit
+#  data:
+#  href: https://www.reddit.com/user/
+#  icon: /assets/img/icons/reddit.svg
+#- name: HackerNews
+#  data:
+#  href: https://news.ycombinator.com/
+#  icon: /assets/img/icons/hn.png
+#- name: Public PGP
+#  data:
+#  href: /assets/public_pgp.txt
+#  icon: /assets/img/icons/pgp.png
+- name: Google Scholar
+  data: alessandrotrapasso
+  href: https://scholar.google.com/citations?user=w0fkBfsAAAAJ&hl=it
+  icon: /assets/img/icons/scholar.svg
+#- name: DBLP
+#  data:
+#  href: https://dblp.uni-trier.de/
+#  icon: /assets/img/icons/dblp.png
+#- name: Bitcoin address
+#  data:
+#  href: bitcoin:
+#  icon: /assets/img/icons/bitcoin.png
+#- name: Zcash address
+#  data: ""
+#  href: ""
+#  icon: /assets/img/icons/zcash.png
+- name: OrcID
+  data: alessandrotrapasso
+  href: https://orcid.org/0000-0001-5431-6607
+  icon: /assets/img/icons/orcid_bw.png
+#- name: ResearchGate
+#  data:
+#  href: https://www.researchgate.net/profile/
+#  icon: /assets/img/icons/researchgate.png
+

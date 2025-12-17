@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -eu
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: timestamp_post BLOGPOST_ID"
+    exit 1
+fi
+
+blogpost_identifier="$1"
+posts_dir='_posts'
+if [ ! -d "$posts_dir" ]; then
+    echo "Error: '$posts_dir' not found."
+    exit 1
+fi
+
+blogpost_dir=$(ls "$posts_dir" | grep -F "$blogpost_identifier" | head -n 1)
+if [ -z "$blogpost_dir" ]; then
+    echo "Error: no match for '$blogpost_identifier' under '$posts_dir'."
+    exit 1
+fi
+
+post_dir="$posts_dir/$blogpost_dir"
+markdown_path=$(find "$post_dir" -iname "*.md" | grep -F "$blogpost_identifier" | head -n 1)
+if [ -z "$markdown_path" ]; then
+    echo "Error: no markdown file found for '$blogpost_identifier' under '$post_dir'."
+    exit 1
+fi
+
+temp_markdown_path="$markdown_path.temp"
+bibliography_path="${posts_dir}/${blogpost_dir}/${blogpost_identifier}.bib"
+meta_file="$posts_dir/$blogpost_dir/meta.yaml"
+pdf_output_file="$posts_dir/$blogpost_dir/${blogpost_identifier}.pdf"
+python3 script/_from_distillpub_to_pandoc.py < "$markdown_path" > "$temp_markdown_path"
+pandoc -N -s --resource-path "$post_dir" --bibliography="${bibliography_path}" \
+  "${meta_file}" \
+  --top-level-division=chapter \
+  --template=_layouts/template.tex "${temp_markdown_path}" \
+  --filter=pandoc-citeproc \
+  -f markdown -t latex+raw_tex+tex_math_dollars+citations -o "${pdf_output_file}"
+echo "Timestamping"
+pipenv run ots stamp "${pdf_output_file}"
+rm "$temp_markdown_path"

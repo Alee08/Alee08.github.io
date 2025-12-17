@@ -1,0 +1,29 @@
+#
+# | |___      _| |___  _| |_
+# | __\ \ /\ / / __\ \/ / __|
+# | |_ \ V  V /| |_ >  <| |_
+#  \__| \_/\_/  \__/_/\_\\__|
+#
+# Twtxt is an open, distributed
+# microblogging platform that
+# uses human-readable text files,
+# common transport protocols, and
+# free software.
+#
+# Learn more about twtxt at
+# https://github.com/buckket/twtxt
+#
+# --------------------------------
+#
+#    nick : alee08
+#     url : https://alee08.github.io/twtxt.txt
+#    lang : en
+#     geo : Earth->ITA->Rome
+#   email : ale.trapasso8@gmail.com
+#     web : https://alee08.github.io/
+#  github : https://github.com/alee08/
+#
+#
+#  \o/ A thing of beauty is a joy forever... \o/
+#
+#

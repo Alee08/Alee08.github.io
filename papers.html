@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+  (() => {
+    const storageKey = "theme";
+    try {
+      const stored = localStorage.getItem(storageKey);
+      if (stored === "light" || stored === "dark") {
+        document.documentElement.dataset.theme = stored;
+        return;
+      }
+    } catch {
+      // Ignore.
+    }
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+  })();
+</script>
+<script src="/assets/js/theme.js" defer></script>
+
+<!-- <title>Publications</title> -->
+<!-- name and description are set by Jekyll SEO -->
+<meta name = "robots" content = "index, follow">
+<meta name = "keywords" content = "alessandro trapasso, computer science, artificial intelligence, research, sapienza, alessandro trapasso sapienza, reinforcement learning, planning">
+
+<meta property="og:type" content="website"> 
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<link rel="canonical" href="https://alee08.github.io/papers">
+<link rel="alternate" type="application/rss+xml" title="Alessandro Trapasso" href="/feed.xml">
+
+<meta name="google-site-verification" content="3E3Nq5h23SFgVWUyKdGTCTdB2ZKtTCX_55ywnC35A20" />
+
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Publications | Alessandro Trapasso</title>
+<meta name="generator" content="Jekyll v4.3.1" />
+<meta property="og:title" content="Publications" />
+<meta name="author" content="Alessandro Trapasso" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Alessandro Trapasso personal web page." />
+<meta property="og:description" content="Alessandro Trapasso personal web page." />
+<link rel="canonical" href="https://alee08.github.io/papers" />
+<meta property="og:url" content="https://alee08.github.io/papers" />
+<meta property="og:site_name" content="Alessandro Trapasso" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Publications" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Alessandro Trapasso"},"description":"Alessandro Trapasso personal web page.","headline":"Publications","url":"https://alee08.github.io/papers"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+  <body class="page">
+
+    <header class="site-header">
+
+  <div class="wrapper"><!--
+    <a class="site-title" rel="author" href="/">Alessandro Trapasso</a>
+	--><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+            
+            <a class="page-link " href="/">Home</a>
+            
+            <a class="page-link " href="/#about">About</a>
+            
+            <a class="page-link  nav-highlighted " href="/papers">Publications</a>
+            
+            <a class="page-link " href="/Multi-UAV_RL_RB">Multi-UAV RL with temporal &amp; priority goals</a>
+            
+            <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle dark mode">
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M21 13.2A7.8 7.8 0 0 1 10.8 3a8.8 8.8 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+        </div>
+      </nav></div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+<h2 id="publications">Publications</h2>
+
+<p><strong>Copyright Information</strong>:
+The documents available from this site are provided as a means to ensure timely dissemination of technical
+work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other
+copyright holders, notwithstanding that they have offered their works here electronically. It is understood
+that all persons copying this information will adhere to the terms and constraints invoked by each author’s
+copyright. These works may not be reposted without the explicit permission of the copyright holder.
+Permission to make digital or hard copies of part or all of these works for personal or classroom use is
+granted without fee provided that copies are not made or distributed for profit or commercial advantage.
+The electronic version of some of the works available from this site may differ from the definitive published
+version. Copyright of works submitted for publication may be transferred without further notice and this
+version may no longer be accessible.</p>
+
+<p><span><img alt="book" src="/assets/img/book-box.png" /> Books</span>
+<span><img alt="chapter" src="/assets/img/incollection-box.png" /> Book Chapters</span>
+<span><img alt="article" src="/assets/img/article-box.png" /> Journal Articles</span>
+<span><img alt="conference" src="/assets/img/inproceedings-box.png" /> Conference Proceedings</span>
+<span><img alt="other" src="/assets/img/informal-box.png" /> Other publications</span></p>
+
+<h2 class="bibliography">2026</h2>
+<div class="bibliography"><div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="TrapassoQRMAX">A. Trapasso, L. Iocchi, and F. Patrizi, “Model-Based Reinforcement Learning in Discrete-Action Non-Markovian Reward Decision Processes,” in <i>Submitted and currently under review</i>, 2026.</span><!-- -->
+[<a href="javascript:bibtex('TrapassoQRMAXbib')">Bibtex</a>]<div class="dialog" id="TrapassoQRMAXbib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{TrapassoQRMAX,
+  author = {Trapasso, Alessandro and Iocchi, Luca and Patrizi, Fabio},
+  title = {Model-Based Reinforcement Learning in Discrete-Action Non-Markovian Reward Decision Processes},
+  year = {2026},
+  booktitle = {Submitted and currently under review},
+  note = {no pdf}
+}
+</pre>
+</div></div></div></div>
+<h2 class="bibliography">2025</h2>
+<div class="bibliography"><div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="TrapassoJonsson2025Concurrent">A. Trapasso and A. Jonsson, “Concurrent Multiagent Reinforcement Learning with Reward Machines,” in <i>Proceedings of the 28th European Conference on Artificial Intelligence (ECAI 2025)</i>, Bologna, Italy, 2025, vol. 413.</span><!-- -->
+[<a href="javascript:bibtex('TrapassoJonsson2025Concurrentbib')">Bibtex</a>]
+[<a href="/papers/2025/TrapassoJonsson2025Concurrent.pdf">PDF</a>]
+[<a href="https://ebooks.iospress.nl/volumearticle/76189?_gl=1*atadje*_up*MQ..*_ga*MzE4MzAxOTMzLjE3NjEzMjk0OTM.*_ga_6N3Q0141SM*czE3NjEzMjk0OTIkbzEkZzEkdDE3NjEzMjk1MDIkajUwJGwwJGgw">URL</a>]<div class="dialog" id="TrapassoJonsson2025Concurrentbib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{TrapassoJonsson2025Concurrent,
+  author = {Trapasso, Alessandro and Jonsson, Anders},
+  title = {Concurrent Multiagent Reinforcement Learning with Reward Machines},
+  booktitle = {Proceedings of the 28th European Conference on Artificial Intelligence (ECAI 2025)},
+  year = {2025},
+  month = oct,
+  address = {Bologna, Italy},
+  series = {Frontiers in Artificial Intelligence and Applications},
+  volume = {413},
+  publisher = {IOS Press},
+  editor = {Lynce, I. and Murano, N. and Vallati, M. and Villata, S. and Chesani, F. and Milano, M. and Omicini, A. and Dastani, M.},
+  doi = {10.3233/FAIA251253},
+  isbn = {978-1-64368-631-8},
+  url = {https://ebooks.iospress.nl/volumearticle/76189?_gl=1*atadje*_up*MQ..*_ga*MzE4MzAxOTMzLjE3NjEzMjk0OTM.*_ga_6N3Q0141SM*czE3NjEzMjk0OTIkbzEkZzEkdDE3NjEzMjk1MDIkajUwJGwwJGgw}
+}
+</pre>
+</div></div></div>
+<div><div class="article">
+<img alt="journal" src="/assets/img/article-box.png"/> [j<span class="j-counter"></span>]
+<span id="MICHELI2025102012trapasso">A. Micheli <i>et al.</i>, “Unified Planning: Modeling, manipulating and solving AI planning problems in Python,” <i>SoftwareX</i>, vol. 29, p. 102012, 2025.</span><!-- -->
+[<a href="javascript:bibtex('MICHELI2025102012trapassobib')">Bibtex</a>]
+[<a href="https://www.sciencedirect.com/science/article/pii/S2352711024003820">URL</a>]<div class="dialog" id="MICHELI2025102012trapassobib" title="BibTeX" style="display:none" >
+  <pre>@article{MICHELI2025102012trapasso,
+  title = {Unified Planning: Modeling, manipulating and solving AI planning problems in Python},
+  journal = {SoftwareX},
+  volume = {29},
+  pages = {102012},
+  year = {2025},
+  issn = {2352-7110},
+  doi = {https://doi.org/10.1016/j.softx.2024.102012},
+  url = {https://www.sciencedirect.com/science/article/pii/S2352711024003820},
+  author = {Micheli, Andrea and Bit-Monnot, Arthur and Röger, Gabriele and Scala, Enrico and Valentini, Alessandro and Framba, Luca and Rovetta, Alberto and Trapasso, Alessandro and Bonassi, Luigi and Gerevini, Alfonso Emilio and Iocchi, Luca and Ingrand, Felix and Köckemann, Uwe and Patrizi, Fabio and Saetti, Alessandro and Serina, Ivan and Stock, Sebastian},
+  keywords = {Automated planning and scheduling, Python library, Interoperability},
+  note = {no pdf}
+}
+</pre>
+</div></div></div>
+<div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="frattolillo2025iastrapasso">F. Frattolillo <i>et al.</i>, “Discrete Abstraction for Multi-UAV applications with Sparse Rewards using Deep Reinforcement Learning,” in <i>19th International Conference on Intelligent Autonomous Systems (IAS)</i>, 2025.</span><!-- -->
+[<a href="javascript:bibtex('frattolillo2025iastrapassobib')">Bibtex</a>]<div class="dialog" id="frattolillo2025iastrapassobib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{frattolillo2025iastrapasso,
+  author = {Frattolillo, Francesco and Maiorana, Flavio and Trapasso, Alessandro and Cadoli, Andrea and Vincelli, Francesco and Vinogradov, Evgenii and Simonjan, Jennifer and Raut, Prasanna and Patrizi, Fabio and Iocchi, Luca},
+  title = {Discrete Abstraction for Multi-UAV applications with Sparse Rewards using Deep Reinforcement Learning},
+  booktitle = {19th International Conference on Intelligent Autonomous Systems (IAS)},
+  year = {2025},
+  note = {no pdf}
+}
+</pre>
+</div></div></div></div>
+<h2 class="bibliography">2024</h2>
+<div class="bibliography"><div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="TrapassoMAQRMAX">A. Trapasso, M. Bavaro, F. Amigoni, L. Iocchi, and F. Patrizi, “Towards Multi-Agent Model-Based Reinforcement Learning in Discrete Non-Markovian Reward Decision Processes,” in <i>AAPEI ’24: 1st International Workshop on Adjustable Autonomy and Physical Embodied Intelligence</i>, 2024.</span><!-- -->
+[<a href="javascript:bibtex('TrapassoMAQRMAXbib')">Bibtex</a>]<div class="dialog" id="TrapassoMAQRMAXbib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{TrapassoMAQRMAX,
+  author = {Trapasso, Alessandro and Bavaro, Marcello and Amigoni, Francesco and Iocchi, Luca and Patrizi, Fabio},
+  title = {Towards Multi-Agent Model-Based Reinforcement Learning in Discrete Non-Markovian Reward Decision Processes},
+  year = {2024},
+  booktitle = {AAPEI ’24: 1st International Workshop on Adjustable Autonomy and Physical Embodied Intelligence},
+  note = {no pdf}
+}
+</pre>
+</div></div></div></div>
+<h2 class="bibliography">2023</h2>
+<div class="bibliography"><div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="trapasso2023">A. Trapasso, S. Santilli, L. Iocchi, and F. Patrizi, “A Formalization of Multi-Agent Planning with Explicit Agent Representation,” in <i>Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing</i>, New York, NY, USA, 2023, pp. 816–823.</span><!-- -->
+[<a href="javascript:bibtex('trapasso2023bib')">Bibtex</a>]
+[<a href="/papers/2023/trapasso2023.pdf">PDF</a>]
+[<a href="https://doi.org/10.1145/3555776.3577753">URL</a>]<div class="dialog" id="trapasso2023bib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{trapasso2023,
+  author = {Trapasso, Alessandro and Santilli, Sofia and Iocchi, Luca and Patrizi, Fabio},
+  title = {A Formalization of Multi-Agent Planning with Explicit Agent Representation},
+  year = {2023},
+  isbn = {9781450395175},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3555776.3577753},
+  doi = {10.1145/3555776.3577753},
+  booktitle = {Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing},
+  pages = {816--823},
+  numpages = {8},
+  keywords = {MA-PDDL, multi-agent planning},
+  location = {Tallinn, Estonia},
+  series = {SAC '23}
+}
+</pre>
+</div></div></div>
+<div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="planrob2023">S. Santilli, A. Trapasso, L. Iocchi, and F. Patrizi, “A novel algorithm for parallelizing actions of a sequential plan,” in <i>33rd International Conference on Automated Planning and Scheduling (ICAPS 2023) PlanRob Workshop</i>, 2023.</span><!-- -->
+[<a href="javascript:bibtex('planrob2023bib')">Bibtex</a>]
+[<a href="/papers/2023/planrob2023.pdf">PDF</a>]
+[<a href="https://icaps23.icaps-conference.org/program/workshops/planrob/PlanRob-23_paper_11.pdf">URL</a>]<div class="dialog" id="planrob2023bib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{planrob2023,
+  title = {A novel algorithm for parallelizing actions of a sequential plan},
+  author = {Santilli, Sofia and Trapasso, Alessandro and Iocchi, Luca and Patrizi, Fabio},
+  booktitle = {33rd International Conference on Automated Planning and Scheduling (ICAPS 2023) PlanRob Workshop},
+  url_website = {https://icaps23.icaps-conference.org/},
+  url = {https://icaps23.icaps-conference.org/program/workshops/planrob/PlanRob-23_paper_11.pdf},
+  year = {2023}
+}
+</pre>
+</div></div></div></div>
+<h2 class="bibliography">2022</h2>
+<div class="bibliography"><div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="iccas2022bbtfi">N. Brandizzi, D. Brunori, A. Trapasso, F. Frattolillo, and L. Iocchi, “Mixed Human-UAV Reinforcement Learning: Literature Review and Open Challenges,” in <i>The International Conference on Cognitive Aircraft Systems (ICCAS)</i>, 2022.</span><!-- -->
+[<a href="javascript:bibtex('iccas2022bbtfibib')">Bibtex</a>]
+[<a href="/papers/2022/iccas2022bbtfi.pdf">PDF</a>]
+[<a href="https://events.isae-supaero.fr/event/14/contributions/367/attachments/32/69/Extended_Abstract_ICCAS_2022.pdf">URL</a>]<div class="dialog" id="iccas2022bbtfibib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{iccas2022bbtfi,
+  author = {Brandizzi, Nicolo' and Brunori, Damiano and Trapasso, Alessandro and Frattolillo, Francesco and Iocchi, Luca},
+  booktitle = {The International Conference on Cognitive Aircraft Systems ({ICCAS})},
+  title = {Mixed Human-{UAV} Reinforcement Learning: Literature Review and Open Challenges},
+  year = {2022},
+  url = {https://events.isae-supaero.fr/event/14/contributions/367/attachments/32/69/Extended_Abstract_ICCAS_2022.pdf}
+}
+</pre>
+</div></div></div>
+<div><div class="inproceedings">
+<img alt="conference" src="/assets/img/inproceedings-box.png"/> [c<span class="c-counter"></span>]
+<span id="icaps2022demo">A. Micheli <i>et al.</i>, “Unified Planning: A Python Library Making Planning Technology Accessible.,” in <i>In System Demonstrations at the 32nd International Conference on Automated Planning and Scheduling (ICAPS 2022). 2022.</i>, 2022.</span><!-- -->
+[<a href="javascript:bibtex('icaps2022demobib')">Bibtex</a>]
+[<a href="https://ai.dmi.unibas.ch/papers/micheli-et-al-icaps2022demo.pdf">URL</a>]<div class="dialog" id="icaps2022demobib" title="BibTeX" style="display:none" >
+  <pre>@inproceedings{icaps2022demo,
+  title = {Unified Planning: A Python Library Making Planning Technology Accessible.},
+  author = {Micheli, Andrea and Arnold, Alexandre and Bit-Monnot, Arthur and Bonassi, Luigi and Framba, Luca and Emilio Gerevini, Alfonso and Hastham Sathiya Satchi, Selvakumar and Helmert, Malte and Ingrand, Felix and Iocchi, Luca and Kockemann, Uwe and Lima, Oscar and Patrizi, Fabio and Pecora, Federico and Poveda, Guillaume and Röger, Gabriele and Saetti, Alessandro and Saffiotti, Alessandro and Scala, Enrico and Serina, Ivan and Stock, Sebastian and Teichteil-Koenigsbuch, Florent and Trapasso, Alessandro and Traverso, Paolo and Valentini, Alessandro},
+  booktitle = {In System Demonstrations at the 32nd International Conference on Automated Planning and Scheduling (ICAPS 2022). 2022.},
+  url_website = {http://icaps22.icaps-conference.org/},
+  url = {https://ai.dmi.unibas.ch/papers/micheli-et-al-icaps2022demo.pdf},
+  year = {2022},
+  note = {no pdf}
+}
+</pre>
+</div></div></div></div>
+
+
+      </div>
+
+        <a style="text-decoration:none" href="mailto:ale.trapasso@gmail.com" class="image-link"> <p style="text-align:center"> <img width="100" height="21" style="margin-bottom:5px" src="/assets/logo/gmail.png" border="0"> <span><b> ale.trapasso8@gmail.com</b></span></p></a>
+        <a style="text-decoration:none" href="mailto:trapasso@diag.uniroma1.it" class="image-link"> <p style="text-align:center"> <img width="90" height="21"  style="margin-bottom:5px" src="/assets/logo/diag_logo2.jpg" border="0"> <span><b> trapasso@diag.uniroma1.it</b></span></p></a>
+        <a style="text-decoration:none" href="https://it.linkedin.com/in/alessandro-trapasso" class="image-link"> <p style="text-align:center"> <img width="100" height="24" style="margin-bottom:8px" src="/assets/logo/LI-Logo.png" border="0"> <span><b>Alessandro Trapasso</b></span></p></a>
+        <a style="text-decoration:none" href="https://github.com/Alee08/" class="image-link"> <p style="text-align:center"> <img width="100" height="24" style="margin-bottom:8px" src="/assets/logo/GitHub_logo.png" border="0"> <span><b>Alee08</b></span></p></a>
+
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+  
+    
+      <span class="footer-icon">
+         <a href="mailto:ale.trapasso8@gmail.com"><img width="24" height="24" src="/assets/img/icons/envelope.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="mailto:trapasso@diag.uniroma1.it"><img width="24" height="24" src="/assets/img/icons/envelope.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://github.com/Alee08"><img width="24" height="24" src="/assets/img/icons/github.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://www.linkedin.com/in/alessandro-trapasso/"><img width="24" height="24" src="/assets/img/icons/linkedin.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://twitter.com/AleTrapasso"><img width="24" height="24" src="/assets/img/icons/twitter.svg"></a>
+      </span>
+  
+    
+      <span class="footer-icon">
+         <a href="https://scholar.google.com/citations?user=w0fkBfsAAAAJ&hl=it"><img width="24" height="24" src="/assets/img/icons/scholar.svg"></a>
+      </span>
+  
+    
+         
+
+<!-- <div style="display: inline; text-align: center"
+  itemscope itemtype="https://schema.org/Person">
+  <a itemprop="sameAs" content="https://orcid.org/"
+     href="https://orcid.org/"
+     target="orcid.widget"
+     rel="me noopener noreferrer"
+     style="vertical-align:top;">
+      <img src="/assets/img/icons/orcid_bw.png"
+           width="24" height="24"
+           alt="ORCID iD icon"></a></div>
+           https://orcid.org/
+-->
+</div>
+
+
+</footer>
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap//js/mdb.min.js" integrity="" crossorigin="anonymous"></script> -->
+
+
+  <!-- jQuery-UI -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  
+
+  <script id="dsq-count-scr" src="//alee08.github.io.disqus.com/count.js" async></script>
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/assets/js/publications.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '');
+  
+  gtag('config', 'G-PYV8T5NDKD');
+  
+  gtag('set', 'anonymizeIp', true);
+  gtag('send', 'pageview');
+</script>
+
+
+
+</html>

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+script/build
+
+bundle exec jekyll doctor
+
+if test -e "./_site/index.html"; then
+  echo "It builds!"
+else
+  echo "Huh. That's odd. The site doesn't seem to build."
+  exit 1
+fi
