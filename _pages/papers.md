@@ -27,8 +27,6 @@ version may no longer be accessible.
 <span><img alt="other" src="/assets/img/informal-box.png"/> Other publications</span>
 
 {::nomarkdown}
-{% bibliography --file bibliography.bib -q @*[author ~= Trapasso] %}
+{% bibliography --file bibliography.bib -q @*[author ~= (?i)trapasso] %}
 {:/nomarkdown}
-
-
 

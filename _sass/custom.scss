@@ -1,8 +1,146 @@
-
-.site-nav {
-    float: left;
+:root {
+  color-scheme: light;
+  --bg: #fdfdfd;
+  --bg-elevated: #ffffff;
+  --text: #111111;
+  --muted: #828282;
+  --border: #e8e8e8;
+  --border-strong: #424242;
+  --link: #2a7ae2;
+  --link-visited: #1756a9;
+  --code-bg: #eef;
 }
 
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b0d10;
+  --bg-elevated: #121824;
+  --text: #e8e8e8;
+  --muted: #a3a3a3;
+  --border: #2a2f37;
+  --border-strong: #4c5563;
+  --link: #7ab7ff;
+  --link-visited: #c8a6ff;
+  --code-bg: #111827;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+hr {
+  border-top-color: var(--border);
+}
+
+blockquote {
+  color: var(--muted);
+  border-left-color: var(--border);
+}
+
+pre,
+code {
+  background-color: var(--code-bg);
+  border-color: var(--border);
+}
+
+.highlight {
+  background: var(--bg-elevated);
+}
+
+.highlighter-rouge .highlight {
+  background: var(--code-bg);
+}
+
+.site-header {
+  background-color: var(--bg);
+  border-top-color: var(--border-strong);
+  border-bottom-color: var(--border);
+}
+
+.site-footer {
+  background-color: var(--bg);
+  border-top-color: var(--border);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--text);
+}
+
+.site-nav .page-link {
+  color: var(--text);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  margin-left: 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+}
+
+.theme-toggle:hover {
+  background-color: var(--bg-elevated);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  display: block;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--sun {
+  display: inline-flex;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: var(--bg);
+    border-color: var(--border);
+  }
+
+  .site-nav .menu-icon > svg path {
+    fill: var(--text);
+  }
+
+  .theme-toggle {
+    margin: 6px 10px 8px 20px;
+  }
+}
+
+.site-nav {
+  float: left;
+}
 
 .page {
   display: flex;
@@ -13,31 +151,79 @@
 .page-content {
   flex: 1;
   padding: 30px 0;
-  background-color: #fff;
+  background-color: var(--bg);
 }
-
 
 .footer-icon {
-    display: inline;
-    text-align: center;
-    width: 24;
-    height: 24;
+  display: inline;
+  text-align: center;
+  width: 24;
+  height: 24;
 }
-
 
 .nav-highlighted {
-font-weight: bold;
+  font-weight: bold;
 }
 
+/* Profile / hero */
+/* ----------------------------------------------------------*/
+
+.profile-hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 24px 0 32px;
+}
+
+.profile-hero--compact {
+  margin: 8px 0 24px;
+}
+
+.profile-avatar {
+  width: 320px;
+  height: 300px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background-color: var(--bg-elevated);
+  object-fit: cover;
+}
+
+.profile-avatar--small {
+  width: 96px;
+  height: 96px;
+}
+
+.profile-text h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.profile-links {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .profile-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 /* Home styles */
 /* ----------------------------------------------------------*/
 
-.home h1 { margin-bottom: 25px; }
+.home h1 {
+  margin-bottom: 25px;
+}
 
-.posts { list-style-type: none; }
+.posts {
+  list-style-type: none;
+}
 
-.posts li { margin-bottom: 30px; }
+.posts li {
+  margin-bottom: 30px;
+}
 
 .posts .post-link {
   font-size: 20px;
@@ -48,36 +234,32 @@ font-weight: bold;
 .posts .post-date {
   display: block;
   font-size: 15px;
-  color: #818181;
+  color: var(--muted);
 }
-
-
 
 /* Post styles */
 /* ----------------------------------------------------------*/
 
-.post-header { margin: 10px 0 30px; }
+.post-header {
+  margin: 10px 0 30px;
+}
 
 .post-header h1 {
- font-size: 36px;
- letter-spacing: -1.75px;
- line-height: 1;
- font-weight: 300;
+  font-size: 36px;
+  letter-spacing: -1.75px;
+  line-height: 1;
+  font-weight: 300;
 }
 
 .post-header .meta {
   font-size: 15px;
-  color: #818181;
+  color: var(--muted);
   margin-top: 5px;
 }
-
 
 /* Bibliography page styles */
 /* ----------------------------------------------------------*/
 
-.bibliography > div {margin-bottom: 20px;}
-
-
-
-
-
+.bibliography > div {
+  margin-bottom: 20px;
+}

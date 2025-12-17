@@ -18,8 +18,8 @@ bibliography: /assets/Multi_UAV/Multi-UAV.bib
 ---
 
 Unmanned aerial vehicles (UAVs) are becoming more and more in demand, their use initially spread for the execution of military missions, now it is becoming increasingly popular in the civilian field. UAVs are involved in the most exterminated missions. In this thesis, we address the problem of the risk of conflicts between UAVs and then analyze it in a specific scenario. 
-Minimizing the risk of collision is extensively covered in the [_BUBBLES project_](http://bubbles-project.eu/).
-The [_BUBBLES project_](http://bubbles-project.eu/) is a large project funded by the _European community_, coordinated by the _Universitat Politècnica de València_ with the participation of the [_DIAG_](https://www.dis.uniroma1.it/en), [_Sapienza University of Rome_](https://www.uniroma1.it/en/pagina-strutturale/home) coordinated by [Prof. Luca Iocchi](https://sites.google.com/a/dis.uniroma1.it/iocchi/home). 
+Minimizing the risk of collision is extensively covered in the [_BUBBLES project_](https://cordis.europa.eu/project/id/893206).
+The [_BUBBLES project_](https://cordis.europa.eu/project/id/893206) is a large project funded by the _European community_, coordinated by the _Universitat Politècnica de València_ with the participation of the [_DIAG_](https://www.dis.uniroma1.it/en), [_Sapienza University of Rome_](https://www.uniroma1.it/en/pagina-strutturale/home) coordinated by [Prof. Luca Iocchi](https://sites.google.com/a/dis.uniroma1.it/iocchi/home). 
 The focus of the _Sapienza unit_ is to implement methods to generate many trajectories for risk assessment.
 
 ## Scenario Characteristics 

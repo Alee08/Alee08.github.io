@@ -2,22 +2,22 @@
 
 My personal webpage.
 
-Link: https://Alee08.github.io/
+Link: https://alee08.github.io
 
 
 ## Preliminaries
 
 Follow this guide to set up your [Ruby development environment](https://cloud.google.com/ruby/docs/setup#linux-instructions).
 
-Install Ruby version `2.7.1`:
+Install Ruby (tested with `3.1.0`):
 ```
-rbenv install 2.7.1
+rbenv install 3.1.0
 ```
 
-Install `bundler`:
+Install `bundler` (matches `Gemfile.lock`):
 
 ```
-gem install bundler
+gem install bundler -v 2.3.12
 ```
 
 Then:
@@ -40,7 +40,7 @@ To serve:
 bundle exec jekyll serve
 ```
 
-To publish on GitHub, from the `source` branch:
+To publish on GitHub (pushes `gh-pages` via SSH), from the `main` branch:
 ```
-rake publish
+bundle exec rake publish
 ```

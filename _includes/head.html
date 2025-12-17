@@ -2,6 +2,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>
+  (() => {
+    const storageKey = "theme";
+    try {
+      const stored = localStorage.getItem(storageKey);
+      if (stored === "light" || stored === "dark") {
+        document.documentElement.dataset.theme = stored;
+        return;
+      }
+    } catch {
+      // Ignore.
+    }
+    const prefersDark =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
+  })();
+</script>
+<script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+
 <!-- <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title> -->
 <!-- name and description are set by Jekyll SEO -->
 <meta name = "robots" content = "index, follow">

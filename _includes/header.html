@@ -23,9 +23,21 @@
             {% for item in site.data.navigation %}
             <a class="page-link {% if item.name == page.title %} nav-highlighted {% endif %}" href="{{ item.link | relative_url }}">{{ item.name | escape }}</a>
             {% endfor %}
+            <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle dark mode">
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M21 13.2A7.8 7.8 0 0 1 10.8 3a8.8 8.8 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
         </div>
       </nav>
     {%- endif -%}
   </div>
 </header>
-

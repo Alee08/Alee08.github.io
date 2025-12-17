@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sys,re; 
+import re
+import sys
 
 if __name__ == "__main__":
     s = ""
@@ -16,4 +17,3 @@ if __name__ == "__main__":
 
     s += "\n## References\n"
     print(s)
-
