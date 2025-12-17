@@ -263,3 +263,40 @@ code {
 .bibliography > div {
   margin-bottom: 20px;
 }
+
+/* Distill (post_page) dark mode fixes */
+/* ----------------------------------------------------------*/
+
+:root[data-theme="dark"] .post.distill d-title,
+:root[data-theme="dark"] .post.distill d-byline,
+:root[data-theme="dark"] .post.distill d-article,
+:root[data-theme="dark"] .post.distill d-appendix,
+:root[data-theme="dark"] .post.distill d-footnote-list,
+:root[data-theme="dark"] .post.distill d-citation-list,
+:root[data-theme="dark"] .post.distill d-bibliography {
+  color: var(--text) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-byline,
+:root[data-theme="dark"] .post.distill d-article,
+:root[data-theme="dark"] .post.distill d-appendix {
+  border-top-color: var(--border) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-article h2,
+:root[data-theme="dark"] .post.distill d-article hr {
+  border-bottom-color: var(--border) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-article a {
+  border-bottom-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-article a:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-article blockquote {
+  color: var(--muted) !important;
+  border-left-color: var(--border) !important;
+}
