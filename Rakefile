@@ -20,6 +20,9 @@ end
 
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
+  origin_url = ENV["PUBLISH_REMOTE"] || `git config --get remote.origin.url`.strip
+  origin_url = "git@github.com:#{GITHUB_REPONAME}.git" if origin_url.empty?
+
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
 
@@ -31,8 +34,8 @@ task :publish => [:generate] do
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
-    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin gh-pages --force"
+    system "git", "remote", "add", "origin", origin_url
+    system "git", "push", "origin", "gh-pages", "--force"
 
     Dir.chdir pwd
   end
