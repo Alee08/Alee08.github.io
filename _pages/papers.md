@@ -4,9 +4,10 @@ title: Publications
 permalink: /papers
 includelink: true
 order: 3
+needs_publications: true
 ---
 
-## Publications
+# Publications
 
 **Copyright Information**:
 The documents available from this site are provided as a means to ensure timely dissemination of technical
@@ -29,4 +30,3 @@ version may no longer be accessible.
 {::nomarkdown}
 {% bibliography --file bibliography.bib -q @*[author ~= (?i)trapasso] %}
 {:/nomarkdown}
-

@@ -33,12 +33,9 @@ a {
   color: var(--link);
 }
 
-a:visited {
-  color: var(--link-visited);
-}
-
+a:visited,
 a:hover {
-  color: var(--text);
+  color: var(--link);
 }
 
 hr {
@@ -73,6 +70,27 @@ code {
 .site-footer {
   background-color: var(--bg);
   border-top-color: var(--border);
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 20px;
+}
+
+.footer-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.footer-contact__text {
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .site-title,
@@ -210,6 +228,64 @@ code {
   }
 }
 
+/* Contact logos */
+/* ----------------------------------------------------------*/
+
+.contact-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px 24px;
+  margin: 16px 0 32px;
+}
+
+.contact-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--link);
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.contact-logo:visited,
+.contact-logo:hover {
+  color: var(--link);
+}
+
+.contact-logo img {
+  display: block;
+  height: 24px;
+  width: auto;
+  transform: translateY(-1px);
+}
+
+.contact-logo--github img {
+  transform: translateY(-4px);
+}
+
+.contact-logo--gmail img {
+  transform: translateY(-2px);
+}
+
+.contact-logo span {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+:root[data-theme="dark"] .contact-logo--github img {
+  filter: invert(1) brightness(1.1);
+}
+
+:root[data-theme="dark"] .footer-contact img {
+  filter: invert(1) brightness(1.1);
+}
+
+:root[data-theme="dark"] .image-link__icon--github {
+  filter: invert(1) brightness(1.1);
+}
+
 /* Home styles */
 /* ----------------------------------------------------------*/
 
@@ -281,6 +357,15 @@ code {
 :root[data-theme="dark"] .post.distill d-article,
 :root[data-theme="dark"] .post.distill d-appendix {
   border-top-color: var(--border) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-byline h3 {
+  color: var(--muted) !important;
+}
+
+:root[data-theme="dark"] .post.distill d-byline p,
+:root[data-theme="dark"] .post.distill d-byline a {
+  color: var(--text) !important;
 }
 
 :root[data-theme="dark"] .post.distill d-article h2,

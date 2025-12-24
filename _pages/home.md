@@ -39,3 +39,26 @@ In addition, I developed the multi-agent planning part in [Unified Planning](htt
 I am passionate about Machine Learning, football, and chess.  
 I believe curiosity and continuous self-improvement make a difference in any field where you want to excel.  
 I am a positive person and I like to invest my time in what I love.
+
+## Contact
+
+{::nomarkdown}
+<div class="contact-logos">
+  <a class="contact-logo contact-logo--gmail" href="mailto:ale.trapasso8@gmail.com">
+    <img src="/assets/logo/gmail.png" alt="Gmail logo">
+    <span>ale.trapasso8@gmail.com</span>
+  </a>
+  <a class="contact-logo contact-logo--diag" href="mailto:trapasso@diag.uniroma1.it">
+    <img src="/assets/logo/diag_logo2.png" alt="DIAG logo">
+    <span>trapasso@diag.uniroma1.it</span>
+  </a>
+  <a class="contact-logo" href="https://it.linkedin.com/in/alessandro-trapasso">
+    <img src="/assets/logo/LI-Logo.png" alt="LinkedIn logo">
+    <span>Alessandro Trapasso</span>
+  </a>
+  <a class="contact-logo contact-logo--github" href="https://github.com/Alee08/">
+    <img src="/assets/logo/GitHub_logo.png" alt="GitHub logo">
+    <span>Alee08</span>
+  </a>
+</div>
+{:/nomarkdown}

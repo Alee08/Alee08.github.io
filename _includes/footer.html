@@ -1,28 +1,15 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-  {% for item in site.data.contacts %}
-    {% if item.name == 'OrcID' %}
+  <div class="wrapper footer-contacts">
+    {% for item in site.data.contacts %}
+      {% if item.name == 'OrcID' %}
         {% continue %}
-    {% endif %}
-      <span class="footer-icon">
-         <a href="{{ item.href }}"><img width="24" height="24" src="{{ item.icon }}"></a>
-      </span>
-  {% endfor %} 
-
-<!-- <div style="display: inline; text-align: center"
-  itemscope itemtype="https://schema.org/Person">
-  <a itemprop="sameAs" content="https://orcid.org/"
-     href="https://orcid.org/"
-     target="orcid.widget"
-     rel="me noopener noreferrer"
-     style="vertical-align:top;">
-      <img src="/assets/img/icons/orcid_bw.png"
-           width="24" height="24"
-           alt="ORCID iD icon"></a></div>
-           https://orcid.org/
--->
-</div>
-
-
+      {% endif %}
+      <a class="footer-contact" href="{{ item.href }}" aria-label="{{ item.name }}">
+        <img width="24" height="24" src="{{ item.icon }}" alt="" aria-hidden="true">
+        {% if item.show_text %}
+          <span class="footer-contact__text">{{ item.data }}</span>
+        {% endif %}
+      </a>
+    {% endfor %}
+  </div>
 </footer>

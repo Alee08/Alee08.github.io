@@ -1,15 +1,24 @@
-{% if site.enable_google_analytics %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
+{% if page.needs_publications %}
 <script src="/assets/js/publications.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+{% endif %}
+
+{% assign ga_primary = site.google_analytics %}
+{% unless ga_primary %}
+  {% assign ga_primary = site.google_analytics_measurements | first %}
+{% endunless %}
+{% if site.enable_google_analytics and ga_primary %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_primary }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{{ ga_primary }}');
   {% for ga_measurement in site.google_analytics_measurements %}
+  {% if ga_measurement != ga_primary %}
   gtag('config', '{{ ga_measurement }}');
+  {% endif %}
   {% endfor %}
   gtag('set', 'anonymizeIp', true);
   gtag('send', 'pageview');

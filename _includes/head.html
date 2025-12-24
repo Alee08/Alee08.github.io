@@ -31,7 +31,9 @@
 
 <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+{% if page.needs_publications %}
 <link rel="stylesheet" href="https://code.jquery.com/ui/{{ site.jqueryui.version }}/themes/base/jquery-ui.css">
+{% endif %}
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
