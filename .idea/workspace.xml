@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d785874-ce4d-4221-92cc-e7418c31e098" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.jekyll-serve.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logo/diag_logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/contacts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/contacts.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/navigation.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/scripts/misc.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/scripts/misc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/home.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_pages/papers.md" beforeDir="false" afterPath="$PROJECT_DIR$/_pages/papers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bibliography/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bibliography/bibliography.bib" afterDir="false" />
-    </list>
+    <list default="true" id="6d785874-ce4d-4221-92cc-e7418c31e098" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766603282521</updated>
-      <workItem from="1766603283611" duration="6071000" />
+      <workItem from="1766603283611" duration="6436000" />
     </task>
     <servers />
   </component>
